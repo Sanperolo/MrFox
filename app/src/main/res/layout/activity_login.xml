@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/forest"
+    android:padding="16dp"
+    tools:context="com.housecloud.mrfox.Login">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/LoginButton_text"
+        android:textSize="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="121dp"
+        android:background="@android:color/darker_gray"
+        android:hint="@string/prompt_email" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="43dp"
+        android:background="@android:color/darker_gray"
+        android:hint="@string/prompt_password" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:alpha="0.75"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="login"
+        android:text="@string/LoginButton_text"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
